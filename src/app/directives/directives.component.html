@@ -1,0 +1,114 @@
+<!-- <div class="container">
+  <div class="vidya" *ngIf="isValid">
+    <p>Vidya</p>
+  </div>
+  <button class="btn btn-primary" (click)="onVidya()">Click here to show Vidya div</button>
+  <div class="sultanpure" *ngIf="isValid1">
+    <p>Sultanpure</p>
+  </div>
+  <button class="btn btn-success" (click)="onSultanpure()">Click here to show Sultanpure div</button>
+
+</div> -->
+
+
+<!-- Eg of ngIf -->
+<!-- <div class="container">
+  <h1>Example of ngIf Directive</h1>
+  <div class="vidya" *ngIf="isVidyaDIV">
+    <p>Vidya</p>
+  </div>
+  <button class="btn btn-primary" (click)="onSubmit('vidya')">Click here to show Vidya div</button>
+  <div class="sultanpure" *ngIf="isSultanpureDIV">
+    <p>Sultanpure</p>
+  </div>
+  <button class="btn btn-success" (click)="onSubmit('sul')">Click here to show Sultanpure div</button>
+</div> -->
+
+<!-- Eg of ngFor -->
+
+<!-- <div class="container">
+  <table class="table">
+    <thead class="table-dark">
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Name</th>
+        <th scope="col">Age</th>
+        <th scope="col">Qualification</th>
+        <th scope="col">City</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let member of members; index as i">
+        <th scope="row">{{i+1}}</th>
+        <td>{{member.name}}</td>
+        <td>{{member.age}}</td>
+        <td>{{member.qualification}}</td>
+        <td>{{member.city}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+ -->
+
+
+<!-- Eg of ngFor push and splice -->
+<div class="container mt-2">
+  <div class="row">
+    <div class="col-md-3">
+     <input type="text" #uname>
+    </div>
+    <div class="col-md-3">
+      <button class="btn btn-success" (click)="onsubmit1(uname)">Submit</button>
+    </div>
+    <div class="col-md-3">
+      <input type="text" #aaa>
+    </div>
+    <div class="col-md-3">
+      <button class="btn btn-success" (click)="onsubmit2(aaa)">Submit</button>
+    </div>
+  </div>
+</div>
+<div class="container mt-2">
+<div class="row">
+  <div class="col-md-6">
+    <table class="table">
+      <thead class="table-dark">
+        <tr>
+          <th>#</th>
+          <th>Name</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let user of users; index as i"   >
+          <th>{{i + 1}}</th>
+          <td>{{user.username}}</td>
+          <td><button class="btn btn-danger" (click)="onRemoveUser(i)">Remove</button></td>
+
+        </tr>
+
+      </tbody>
+    </table>
+  </div>
+  <div class="col-md-6">
+    <table class="table">
+      <thead class="table-dark">
+        <tr >
+          <th>#</th>
+          <th>Age</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let myage of age; index as i">
+          <th>{{i+1}}</th>
+          <td>{{myage.age}}</td>
+          <td><button class="btn btn-danger" (click)="onRemoveAge(i)">Remove</button></td>
+
+        </tr>
+
+      </tbody>
+    </table>
+  </div>
+</div>
+</div>

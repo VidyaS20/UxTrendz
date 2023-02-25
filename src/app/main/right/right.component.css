@@ -1,0 +1,9 @@
+.right{
+  margin: 10px 5px;
+  width: 48%;
+  padding: 10px;
+  float: right;
+}
+.clear{
+  clear: both;
+}

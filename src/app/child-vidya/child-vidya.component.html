@@ -1,0 +1,34 @@
+<div class="container">
+  <h2>Hi I am from Child</h2>
+  <!-- <h3>Child Name is {{childName}}</h3>
+  <h3>Parent Suggested Name: {{PtoC}}</h3>
+  <h3>Name Changed After Suggestion: {{childName}} </h3>
+  <h3>Full Name: {{childName}} {{surname}}</h3>
+  <h3>Age : {{age}}</h3> -->
+  <h2>My Beautiful Family</h2>
+  <h2>Father Name: {{fatherName}}</h2>
+  <h2>Mother Name: {{motherName}}</h2>
+  <h2>Childrens are:</h2>
+
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Name</th>
+        <th scope="col">Qualification</th>
+        <th scope="col">Age</th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody class="table-group-divider">
+      <tr *ngFor="let childs of childrenNames">
+        <th scope="row">1</th>
+        <td>{{childs.name}}</td>
+        <td>{{childs.Qualification}}</td>
+        <td>{{childs.age}}</td>
+        <td><button class="btn btn-success" (click)="onSubmit(childs)">Submit</button></td>
+      </tr>
+
+    </tbody>
+  </table>
+</div>

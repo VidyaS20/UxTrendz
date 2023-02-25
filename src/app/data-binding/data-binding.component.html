@@ -1,0 +1,15 @@
+<div class="dataBinding">
+  <h4>This is DataBinding using String Interpolation</h4>
+  <p> My name is {{name}} </p>
+  <p> My surname  is {{surname}} </p>
+  <p> My age is {{age}}</p>
+  <p> I am from {{city}}</p>
+  <h4>This is DataBinding using Property Binding</h4>
+  <p>My State is <input type="text" value="{{state}}"></p>
+  <p>My State is <input type="text" [value]="state"></p>
+  <h4>Changing Name using Event Binding</h4>[]
+  <button class="btn btn-success" (click)="changeName()">Change Name</button>
+  <h4>This is 2 Way DataBinding</h4>
+  <p>My Name is <input type="text" [(ngModel)]="surname"></p>
+
+</div>

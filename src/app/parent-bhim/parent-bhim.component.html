@@ -1,0 +1,17 @@
+<div class="container">
+  <h2>Hi I am from parent.</h2>
+  <h3>Parent Name is {{parentName}}</h3>
+  <div *ngIf="aaa">
+    <h3>{{aaa.name}} button is clicked</h3>
+    <h3>{{aaa.name}} age is {{aaa.age}}</h3>
+    <h3>{{aaa.name}} Qualification is {{aaa.Qualification}}</h3>
+  </div>
+</div>
+<hr>
+<!-- <app-child-vidya [PtoC]="suggestedName" [surname]="surname" [age]="age"></app-child-vidya> -->
+<app-child-vidya
+                [childrenNames]="childrenNames"
+                [fatherName]="fatherName"
+                [motherName]="motherName"
+                (childData)="childData($event)">
+</app-child-vidya>

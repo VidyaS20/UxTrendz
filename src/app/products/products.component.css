@@ -1,0 +1,24 @@
+/* p{
+  background-color: cadetblue;
+} */
+/* .container{
+  width: 80%;
+  margin: 0 auto;
+  padding: 15px;
+  min-height: 400px;
+  background: azur;
+} */
+/* .card{
+  display: inline-block;
+  margin: 0 10px 10px;
+  width: 20%;
+} */
+.box{
+  height: 80px;
+  width: 80px;
+  background-color: aqua;
+  border: 1px solid black;
+}
+.border1{
+  border: 1px solid black;
+}

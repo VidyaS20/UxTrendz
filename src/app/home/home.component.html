@@ -1,0 +1,33 @@
+<div class="container">
+  <div class="text-center">
+    <h2>Home</h2>
+    <div>
+      <h3>
+        Parent User name is : {{parentUserName}}
+      </h3>
+    </div>
+    <!-- <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur eius possimus eum quibusdam consectetur, commodi quidem sunt sapiente ducimus cum unde officia voluptatum facilis tempora. Libero tempora non sequi tenetur.</p> -->
+
+    <!-- <div class="product">
+      <ng-container *ngIf="statusOnline">
+        <div *ngFor="let product of products">
+          {{product . name}}
+        </div>
+      </ng-container>
+    </div> -->
+    <div class="row">
+      <div class="col-md-2">
+        <button class="btn btn-primary btn-sm" (click)="childProperty()">Call Child Property</button>
+        <hr>
+        <button class="btn btn-primary btn-sm" (click)="childMethod()">Call Child Method</button>
+      </div>
+      <div class="col-md-8">
+        <app-viewchild></app-viewchild>
+      </div>
+      <div class="col-md-2">
+
+      </div>
+    </div>
+
+  </div>
+</div>
